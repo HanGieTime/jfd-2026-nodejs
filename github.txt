@@ -1,0 +1,26 @@
+fungsi github:
+1. menyimpan source code secara online/cloud
+2. kolaborasi antar developer
+3. tool/alat untuk menarik source code ke server
+4. versioning > bisa kembali ke versi sebelumnya
+
+status dalam git:
+1. (U) untracked > fuile yang belum terdaftar sistem git
+2. Modification > file yang exiting , di Modification/dilakukan perubahan isi file
+3. (A) Added > file sudah memasuki stage add 
+
+langkah langkan mengirim source ke github : 
+1. add > keluar
+2. commit > proses kirim berjalan
+3. push > masuk ke github
+
+kangkah langkah menghubungkan repo baru di lokal  & server github:
+1. git init > mendaftarkan repo lokakl kita sebagai repo yang sudah sistem git
+2. git branch -M main > menganti cabang utaman dengan nama main
+3. git remote add origin https://link-ke-repo-github-kita > menghubungkan repo lokal dengan repo could
+4. git config -- global user.email "email"
+   git config -- global user.name "username"
+5. git add . >titik artinya semua file
+6. git commit -m "pesan commit"
+7. git push -u origin main > finalisasi pengiriman source code (hanya sekali pertama kali)
+8. git push (untuk selanjutnya)
