@@ -24,3 +24,7 @@ kangkah langkah menghubungkan repo baru di lokal  & server github:
 6. git commit -m "pesan commit"
 7. git push -u origin main > finalisasi pengiriman source code (hanya sekali pertama kali)
 8. git push (untuk selanjutnya)
+
+syarat kolaborasi : 
+1. invite developer ke repo kita
+2. narik perubahan dari collaborator lain : git pull
