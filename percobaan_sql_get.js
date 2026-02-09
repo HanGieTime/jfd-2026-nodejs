@@ -11,7 +11,7 @@ const database = mysql.createConnection({
   host:'localhost',
   user:'root',
   password:'',
-  database:'javascript_fullstack_januari2026'
+  database:'jfd_jan2026'
 })
 database.connect()
 
