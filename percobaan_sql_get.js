@@ -16,7 +16,13 @@ const database = mysql.createConnection({
 database.connect()
 
 try{
-  database.query('SELECT * FROM karyawan', function (error, hasil) {
+  let sql =
+  `SELECT karyawan.*, agama.agama, jabatan.nama as jabatan
+  FROM karyawan LEFT JOIN agama
+  ON agama.id = karyawan.agama_id
+  LEFT JOIN jabatan
+  ON jabatan.id = karyawan.jabatan_id`;
+  database.query(sql, function (error, hasil) {
     if (error){
       throw error.message()
     }
@@ -24,7 +30,8 @@ try{
     for (const i in hasil) {
       semuaNama += hasil[i].nama + '\n'
     }
-    console.log(semuaNama)
+    console.log(hasil)
+    // console.log(semuaNama)
   })
   database.end()
 }catch (error){
